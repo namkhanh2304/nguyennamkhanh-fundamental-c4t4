@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie list</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    {% for movie in movies %}
+        <h1>{{movie.title}}</h1> 
+        <h3>{{movie.casts}}</h3>
+        <img 
+        src="{{movie.thumbnail_url}}" 
+        alt="batman">
+        <a href="https://www.sideshowtoy.com/wp-content/uploads/2017/11/dc-comics-justice-league-batman-statue-prime1-studio-feature-903246-1.jpg" >reference</a>
+    {% endfor %}    
+</body>
+</html>
